@@ -121,7 +121,7 @@ p {
 
 /* Mobile */
 @media (max-width: 500px) {
-  h1 { font-size: 3.5rem; }
+  h1 { font-size: 7.5rem; }
   p { font-size: 0.9rem; }
   #card-row {
     grid-template-columns: 1fr; /* stack */
@@ -130,14 +130,14 @@ p {
   display: grid;
   grid-template-areas:
     "header header"
-    "content"
+    "content content"
     "footer footer";
   grid-template-columns: 1fr;
 }
 
   .content { 
   grid-area: content; 
-  background-color: rgb(106, 95, 117); 
+  background-color: rgb(141, 151, 172); 
   h1 { font-size: 3.5rem; }
   p { font-size: 0.9rem; }
 }
