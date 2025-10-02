@@ -135,6 +135,13 @@ p {
   grid-template-columns: 1fr;
 }
 
+  .content { 
+  grid-area: content; 
+  background-color: rgb(106, 95, 117); 
+  h1 { font-size: 3.5rem; }
+  p { font-size: 0.9rem; }
+}
+
 /* Tablet */
 @media (min-width: 601px) and (max-width: 900px) {
   h1 { font-size: 1.8rem; }
