@@ -126,6 +126,13 @@ p {
   #card-row {
     grid-template-columns: 1fr; /* stack */
   }
+  .container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "content"
+    "footer footer";
+  grid-template-columns: 1fr;
 }
 
 /* Tablet */
