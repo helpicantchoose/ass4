@@ -119,43 +119,47 @@ p {
   font-size: 1rem;
 }
 
-/* Mobile */
-@media (max-width: 400px) {
-  h1 { font-size: 7.5rem; }
+/* --------- Mobile --------- */
+@media (max-width: 600px) {
+  .menu {
+    display: none;
+  }
+  h1 { font-size: 1.5rem; color: rgb(136, 194, 136); }
   p { font-size: 0.9rem; }
+
   #card-row {
     grid-template-columns: 1fr; /* stack */
   }
+
   .container {
-  display: grid;
-  grid-template-areas:
-    "header"
-    "content"
-    "footer";
-  grid-template-columns: 1fr;
-}
+    display: grid;
+    grid-template-areas:
+      "header"
+      "content"
+      "footer";
+    grid-template-columns: 1fr;
+  }
 
   .content { 
-  grid-area: content; 
-    
-  background-color: rgb(141, 151, 172); 
-  h1 { font-size: 3.5rem; color: green }
-  p { font-size: 0.9rem; }
+    background-color: rgb(15, 41, 97); 
+  }
 }
 
-/* Tablet */
-@media (min-width: 401px) and (max-width: 900px) {
+/* --------- Tablet --------- */
+@media (min-width: 601px) and (max-width: 900px) {
   h1 { font-size: 1.8rem; }
   p { font-size: 1rem; }
+
   #card-row {
     grid-template-columns: repeat(2, 1fr); /* 2 per row */
   }
 }
 
-/* Desktop */
+/* --------- Desktop --------- */
 @media (min-width: 901px) {
   h1 { font-size: 2.2rem; }
   p { font-size: 1.1rem; }
+
   #card-row {
     grid-template-columns: repeat(3, 1fr); /* 3 per row */
   }
