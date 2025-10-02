@@ -120,8 +120,8 @@ p {
 }
 
 /* Mobile */
-@media (max-width: 600px) {
-  h1 { font-size: 1.5rem; }
+@media (max-width: 500px) {
+  h1 { font-size: 3.5rem; }
   p { font-size: 0.9rem; }
   #card-row {
     grid-template-columns: 1fr; /* stack */
