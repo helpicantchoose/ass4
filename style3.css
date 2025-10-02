@@ -129,16 +129,17 @@ p {
   .container {
   display: grid;
   grid-template-areas:
-    "header header"
-    "content content"
-    "footer footer";
+    "header"
+    "content"
+    "footer";
   grid-template-columns: 1fr;
 }
 
   .content { 
   grid-area: content; 
+    
   background-color: rgb(141, 151, 172); 
-  h1 { font-size: 3.5rem; }
+  h1 { font-size: 3.5rem; color: green }
   p { font-size: 0.9rem; }
 }
 
